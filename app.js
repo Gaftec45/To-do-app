@@ -9,7 +9,7 @@ const app = express();
 
 const corsOp = {
     origin: ['https://gftech-todo.vercel.app/', 'http://localhost:3000/'], 
-    methods: ['get', 'post', 'patch', 'delete'],
+    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
 }
 app.use(cors(corsOp));
 app.use(express.json());
