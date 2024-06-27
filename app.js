@@ -8,7 +8,7 @@ ConnectDB();
 const app = express();
 
 const corsOp = {
-    origin: ['https://gftech-todo.vercel.app/', 'http://localhost:3000/'], 
+    origin: ['https://gftech-todo.vercel.app', 'http://localhost:3000'], 
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
 }
 app.use(cors(corsOp));
