@@ -7,7 +7,11 @@ ConnectDB();
 
 const app = express();
 
-app.use(cors());
+const corsOp = {
+    origin: ['https://gftech-todo.vercel.app/', 'http://localhost:3000/'], 
+    methods: ['get', 'post', 'patch', 'delete'],
+}
+app.use(cors(corsOp));
 app.use(express.json());
 
 app.use('/api/todos', todoRoutes);
